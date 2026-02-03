@@ -3588,7 +3588,31 @@ function filterCards() {
 
   noResult.style.display = found ? "none" : "block";
 }
+let aosDisabled = false;
 
+function disableAOS() {
+  if (!aosDisabled) {
+    document.querySelectorAll("[data-aos]").forEach(el => {
+      el.classList.remove("aos-init", "aos-animate");
+      el.removeAttribute("data-aos");
+    });
+    aosDisabled = true;
+  }
+}
+
+function filterCards() {
+  disableAOS();
+
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const cols = document.querySelectorAll(".G-gallery-grid .col-lg-4");
+
+  cols.forEach(col => {
+    const card = col.querySelector(".G-card");
+    const name = card.getAttribute("data-name").toLowerCase();
+
+    col.style.display = name.includes(input) ? "block" : "none";
+  });
+}
 </script>
 </body>
 </html>
