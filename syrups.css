@@ -1,0 +1,344 @@
+section.container-fluid:nth-of-type(1) {
+  border-bottom: 1px solid rgba(39, 173, 88, 0.329); 
+          background-image: url(U\ BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+section.container-fluid:nth-of-type(1) h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 64px;
+  letter-spacing: 2px;
+  color: #0FB9B1;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+section.container-fluid:nth-of-type(1) p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #475569;
+  text-align: center;
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+  font-variant: small-caps;
+}
+
+
+
+
+.overlay-text {
+  position: absolute;
+  top: 34%;   
+  left: 14%; 
+  transform: translate(0, 0); 
+}
+
+.overlay-text h1 {
+  font-size: 88px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  color: #0FB9B1;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 2px;
+}
+
+.overlay-text p {
+  font-size: 28px;
+  margin-bottom: 6px;
+  max-width: 450px;
+  color: #475569;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+}
+
+.overlay-text .btn {
+  padding: 0px 0px;
+  font-size: 28px;
+  color: #475569;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+    font-variant: small-caps;
+}
+
+
+.G-card {
+  position: relative;
+}
+
+.G-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transform: translateZ(20px);
+  transition: opacity 0.35s ease;
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.G-card-overlay span {
+  color: #F8FAFC;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  padding: 10px 22px;
+  font-family: 'Playfair Display', serif;
+  font-variant: small-caps;
+  border-radius: 999px;
+  transform: scale(0.85);
+  transition: transform 0.35s ease;
+}
+
+.G-card:hover .G-card-overlay {
+  opacity: 1;
+}
+
+.G-card:hover .G-card-overlay span {
+  transform: scale(1);
+}
+
+
+
+.G-gallery-grid{
+  background-image: url(U\ BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.G-card{
+  box-sizing: border-box;
+  width: 100%;
+  perspective: 1200px;
+transform-style: preserve-3d;
+  height: 400px;
+  background: #47556909;
+  box-shadow: 12px 17px 51px rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 
+  transform 0.45s ease,
+  box-shadow 0.45s ease,
+  border-color 0.45s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.G-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 30px;
+    transform: translateZ(40px);
+  transition: transform 0.45s ease;
+}
+.G-card:hover img{
+  transform: translateZ(70px);
+}
+
+
+.G-card:hover{
+  transform: 
+    rotateX(10deg)
+    rotateY(-10deg)
+    scale(1.05);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.65);
+  border-color: #22C55E;
+}
+
+.G-card:active{
+  transform:
+    rotateX(0deg)
+    rotateY(0deg)
+    scale(0.97);
+}
+
+
+
+.modal-content{
+  background: #F8FAFC;
+}
+
+.modal-body img{
+  object-fit: contain;
+  height: 60vh;
+  background: #F8FAFC;
+  border: none;
+  padding-top: 100px;
+}
+
+.hhh{
+font-family: 'Playfair Display', serif; 
+font-variant: small-caps;
+color: #0FB9B1;
+font-size: 38px;
+letter-spacing: 2px;
+text-align: justify;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.ddd{
+font-family: 'Playfair Display', serif; 
+font-variant: small-caps;
+color: #22C55E !important;
+font-size: 28px;
+letter-spacing: 1px;
+text-align: justify;
+font-weight: bold;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+.ppp{
+color: #475569;
+font-size: 18px;
+text-align: justify;
+font-weight: 600;
+}
+.abc1{
+  color: #0d4fb1 !important;
+}
+.abc2{
+  color: #7f92fd !important;
+}
+.abc30{
+  color: #f88c34 !important;
+}
+.abc40{
+  color: #4e3779 !important;
+}
+.abc7{
+  color: #886400 !important;
+}
+.abc8{
+  color: #2e4f92 !important;
+}
+.abc12{
+  color: #c40721 !important;
+}
+
+/* ===== Responsive Hero Section: Syrups ===== */
+
+/* Part 1: 320px – 375px (Small Mobile) */
+@media (max-width: 375px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 90vh;
+    padding: 1rem 0;
+    background-size: cover;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+}
+
+/* Part 2: 376px – 425px (Medium Mobile) */
+@media (min-width: 376px) and (max-width: 425px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 95vh;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    margin-bottom: 14px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 480px;
+  }
+}
+
+/* Part 3: 426px – 768px (Tablets & Large Mobile) */
+@media (min-width: 426px) and (max-width: 768px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 100vh;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 48px;
+    letter-spacing: 1.5px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 18px;
+    max-width: 500px;
+  }
+}
+
+/* Part 4: 769px – 1440px (Small Laptops & Desktops) */
+@media (min-width: 769px) and (max-width: 1440px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 100vh;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 56px;
+    letter-spacing: 2px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 20px;
+    max-width: 555px;
+  }
+}
+
+/* Part 5: 1441px – 1990px (Large Desktops) */
+@media (min-width: 1441px) and (max-width: 1990px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 100vh;
+    background-size: cover;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 64px;
+    letter-spacing: 2px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 22px;
+    max-width: 600px;
+  }
+}
+
+/* Part 6: 1991px – 2560px (Ultra-Large Screens) */
+@media (min-width: 1991px) {
+  section.container-fluid:nth-of-type(1) {
+    height: 100vh;
+    background-size: cover;
+  }
+
+  section.container-fluid:nth-of-type(1) h1 {
+    font-size: 72px;
+    letter-spacing: 2.5px;
+  }
+
+  section.container-fluid:nth-of-type(1) p {
+    font-size: 24px;
+    max-width: 650px;
+  }
+}
