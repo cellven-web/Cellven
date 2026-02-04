@@ -417,6 +417,42 @@ font-weight: 600;
 }
 
 
+.wellcome{
+  background-image: url(U\ BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid rgba(39, 173, 88, 0.329); 
+  height: 36vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.wellcome-text{
+  font-family: 'Great Vibes', cursive;
+  font-size: 72px;
+  letter-spacing: 2px;
+  padding-top: 12vh;
+}
+
+.text-main{ color: #475569; }
+.text-brand{ color: #0FB9B1; }
+
+.char{
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: charFade 0.6s ease forwards;
+}
+
+@keyframes charFade{
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 
 
@@ -1857,4 +1893,84 @@ font-weight: 600;
     line-height: 2;
   }
 
+}
+@media (max-width: 375px) {
+  .wellcome {
+    height: 26vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-size: cover;
+  }
+
+  .wellcome-text {
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding-top: 10vh;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .wellcome {
+    height: 28vh;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+  }
+
+  .wellcome-text {
+    font-size: 32px;
+    letter-spacing: 1.2px;
+    padding-top: 12vh;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .wellcome {
+    height: 34vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .wellcome-text {
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .wellcome {
+    height: 36vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .wellcome-text {
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding-top: 14vh;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1990px) {
+  .wellcome {
+    height: 36vh;
+  }
+
+  .wellcome-text {
+    font-size: 72px;
+    letter-spacing: 2px;
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 1991px) {
+  .wellcome {
+    height: 30vh;
+  }
+
+  .wellcome-text {
+    font-size: 80px;
+    letter-spacing: 2.5px;
+    padding-top: 14vh;
+  }
 }

@@ -79,7 +79,14 @@
   </div>
 </nav>
 
-
+<section class="wellcome py-5 text-center">
+  <div class="container">
+    <h2 class="wellcome-text mb-3">
+      <span class="text-main">Wellcome To </span>
+      <span class="text-brand">Cellven</span>
+    </h2>
+  </div>
+</section>
 
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner c1">
@@ -1712,6 +1719,30 @@ function filterCards() {
     col.style.display = name.includes(input) ? "block" : "none";
   });
 }
+</script>
+<script>
+function animateText(selector, startDelay = 0) {
+  const el = document.querySelector(selector);
+  const text = el.textContent;
+  el.textContent = "";
+
+  let delay = startDelay;
+
+  text.split("").forEach(char => {
+    const span = document.createElement("span");
+    span.className = "char";
+    span.style.animationDelay = `${delay}s`;
+    span.innerHTML = char === " " ? "&nbsp;" : char;
+    el.appendChild(span);
+    delay += 0.05;
+  });
+
+  return delay;
+}
+
+let delay = animateText(".text-main", 0);
+
+animateText(".text-brand", delay);
 </script>
 </body>
 </html>
