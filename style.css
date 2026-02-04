@@ -165,7 +165,8 @@
   font-size: 88px;
   font-weight: 400;
   margin-bottom: 2px;
-  color: #0FB9B1;
+  color: #0B2545;
+text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.45);
   font-family: 'Great Vibes', cursive;
   letter-spacing: 2px;
 }
@@ -173,20 +174,55 @@
 .overlay-text p {
   font-size: 28px;
   margin-bottom: 6px;
-  max-width: 450px;
-  color: #475569;
+  max-width: 300px !important; 
+  color: #FFFFFF;
+text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
   letter-spacing: 1px;
   font-family: 'Inter', sans-serif;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 .overlay-text .btn {
   padding: 0px 0px;
   font-size: 28px;
-  color: #475569;
+  color: #FFFFFF;
+text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.35);
   letter-spacing: 1px;
   font-family: 'Inter', sans-serif;
     font-variant: small-caps;
+  font-weight: bold;
+}
+.ovt1 {
+  font-size: 88px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  color: #1B5E20 !important;
+text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 2px;
+}
+
+.ovt2{
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: #333333 !important;
+text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.18);
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.ovt2 {
+  padding: 0px 0px;
+  font-size: 28px;
+  color: #333333 !important;
+text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.18);
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif;
+    font-variant: small-caps;
+  font-weight: bold;
 }
 
 
